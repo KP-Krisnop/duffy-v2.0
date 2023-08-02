@@ -1,0 +1,106 @@
+:root {
+    --page-bg-color: #F9EED7;
+    --primary-color: #F5E1B7;
+    --tertiary-color: #DBC9A2;
+    --quaternary-color: #C7B693;
+    --quinary-color: #AFA080;
+    --dark-color: #8C8066;
+    --accent-color: #b43b20;
+    --secondary-color: #B88319;
+    --sub-secondary-color: #805e1b;
+}
+
+html {
+    width: 100vw;
+    /* height: 5000px; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
+
+body {
+    width: 70vw;
+    min-width: 1344px;
+    background-color: var(--page-bg-color);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3.75rem;
+    margin: 0;
+}
+
+p {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+button {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    transition: all 0.15s;
+}
+
+button:hover {
+    transform: scale(105%);
+}
+
+button:active {
+    background-color: var(--quinary-color);
+}
+
+img {
+    height: 150px;
+}
+
+input {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 100%;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+input::placeholder {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--quinary-color);
+    transform: translateY(-4px);
+}
+
+.ending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.end-word {
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.my-logo {
+    width: 24px;
+    height: 24px;
+}

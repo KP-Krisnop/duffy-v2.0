@@ -1,0 +1,96 @@
+.new-game-modal[open],
+.end-game-modal[open],
+.win-modal[open] {
+    background-color: var(--primary-color);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    width: 640px;
+    height: 400px;
+    z-index: 100;
+}
+
+.new-game-modal>p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.players {
+    background-color: var(--tertiary-color);
+    height: 100px;
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+}
+
+.players>div {
+    font-size: 1.25rem;
+    background-color: var(--quinary-color);
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.15s;
+}
+
+.players>div:hover {
+    transform: scale(105%);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.start-button,
+.cancel-button {
+    background-color: var(--quinary-color);
+}
+
+.start-button {
+    background-color: var(--secondary-color);
+}
+
+.cancel-button {
+    background-color: var(--accent-color);
+}
+
+.new-game-modal::backdrop,
+.end-game-modal::backdrop,
+.win-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.end-game-modal[open] {
+    gap: 60px;
+}
+
+.end-button {
+    background-color: var(--secondary-color);
+}
+
+.win-modal[open] {
+    gap: 40px;
+}
+
+.win-modal>h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.win-modal>button {
+    background-color: var(--secondary-color);
+}

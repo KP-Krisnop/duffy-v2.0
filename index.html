@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Duffy V2</title>
+    <!-- CSS import -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/section.css">
+    <link rel="stylesheet" href="styles/input.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <p>Duffy</p>
+        <button class="new-game-button">New Game</button>
+        <button class="continue-button" title="Alt + Q">Continue</button>
+
+        <!-- Modal -->
+        <dialog class="new-game-modal">
+            <h1>New Game?</h1>
+            <p>Are these your player?</p>
+            <div class="players">
+                <input type="text" class="player-name" placeholder="Player 1">
+                <input type="text" class="player-name" placeholder="Player 2">
+                <input type="text" class="player-name" placeholder="Player 3">
+                <input type="text" class="player-name" placeholder="Player 4">
+            </div>
+            <div class="button-container">
+                <button class="start-button">Start</button>
+                <button class="cancel-button">Cancel</button>
+            </div>
+        </dialog>
+        <dialog class="end-game-modal">
+            <h1>End Game?</h1>
+            <div class="button-container">
+                <button class="end-button">End</button>
+                <button class="cancel-button">Cancel</button>
+            </div>
+        </dialog>
+        <dialog class="win-modal">
+            <p class="win-message">The winner is</p>
+            <h1 class="winning-player">Player</h1>
+            <button class="cancel-button">OK</button>
+        </dialog>
+        <div class="error-message" id="">Game is not started</div>
+        <div class="error-message" id="">Missing value</div>
+    </header>
+    <section>
+        <div class="rank-stats">
+            <div class="rank-container">
+                <h1 class="score">40</h1>
+                <p class="name">Player 1</p>
+                <div class="added-score">+1</div>
+                <div class="book-streek">2</div>
+            </div>
+            <div class="rank-container">
+                <h1 class="score">30</h1>
+                <p class="name">Player 2</p>
+                <div class="added-score">+3</div>
+                <div class="book-streek">4</div>
+            </div>
+            <div class="rank-container">
+                <h1 class="score">20</h1>
+                <p class="name">Player 3</p>
+                <div class="added-score">+5</div>
+                <div class="book-streek">6</div>
+            </div>
+            <div class="rank-container">
+                <h1 class="score">10</h1>
+                <p class="name">Player 4</p>
+                <div class="added-score">+7</div>
+                <div class="book-streek">8</div>
+            </div>
+        </div>
+        <div class="game-stats">
+            <div class="trump-stat">
+                <h1>Trump</h1>
+                <img class="trump-icon" src="icons/spade.svg">
+            </div>
+            <div class="cards-stat">
+                <p class="player-turn">Player 1</p>
+                <h1 class="cards-number">13 Cards</h1>
+                <p class="constrainer">Constrain Player 1 : 1</p>
+            </div>
+        </div>
+    </section>
+    <div class="input">
+        <div class="goal-bar">
+            <p>Goals</p>
+            <div class="line"></div>
+            <div class="goal-input">
+                <input type="number" placeholder="Player 1" class="goals">
+                <input type="number" placeholder="Player 2" class="goals">
+                <input type="number" placeholder="Player 3" class="goals">
+                <input type="number" placeholder="Player 4" class="goals">
+            </div>
+        </div>
+        <div class="result-bar">
+            <p>Results</p>
+            <div class="line"></div>
+            <div class="result-input">
+                <input type="number" placeholder="Player 1" class="results">
+                <input type="number" placeholder="Player 2" class="results">
+                <input type="number" placeholder="Player 3" class="results">
+                <input type="number" placeholder="Player 4" class="results">
+            </div>
+        </div>
+    </div>
+    <!-- Table -->
+    <h1>Table</h1>
+    <div class="table">
+        <div class="table-header">
+            <div class="card-word">Cards</div>
+            <div class="table-name">Player 1</div>
+            <div class="table-name">Player 2</div>
+            <div class="table-name">Player 3</div>
+            <div class="table-name">Player 4</div>
+        </div>
+    </div>
+    <div class="ending">
+        <p class="end-word">Made by : KP Krisnop</p>
+        <img class="my-logo" src="icons/kp-logo.png">
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/general.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/table.js"></script>
+</body>
+
+</html>
